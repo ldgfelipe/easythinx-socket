@@ -18,7 +18,7 @@ const port = process.env.PORT || 3000;
 console.log(process.env.PORT)
 
 const server = app.listen(host, port, function () {
-  console.log(`Creando Servicio websocket 5000 `);
+  console.log(`Creando Servicio websocket http(s)://${host}:${port}`);
 });
 
 const io = SocketIO(server, {
