@@ -8,8 +8,8 @@ const mysql = require("mysql");
 const {Users} = require('./utils/users.js')
 const users = new Users
 
-const server = app.listen("3000", function () {
-  console.log(`Creando Servicio websocket 3000 `);
+const server = app.listen("80", function () {
+  console.log(`Creando Servicio websocket 80 `);
 });
 
 const io = SocketIO(server, {
