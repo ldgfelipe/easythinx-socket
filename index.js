@@ -8,7 +8,16 @@ const mysql = require("mysql");
 const {Users} = require('./utils/users.js')
 const users = new Users
 
-const server = app.listen(5000, function () {
+
+//port (as described above) and host are both wrong
+
+//use alternate localhost and the port Heroku assigns to $PORT
+const host = '0.0.0.0';
+const port = process.env.PORT || 3000;
+
+console.log(process.env.PORT)
+
+const server = app.listen(host, port, function () {
   console.log(`Creando Servicio websocket 5000 `);
 });
 
