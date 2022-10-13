@@ -32,7 +32,7 @@ io.on("connection", (socket) => {
 
   socket.on('inichannel',(data)=>{
 
-   var channel='canal-proyecto-'+data.idproy.id
+   var channel='canal-proyecto-'+data.proyectoSelect.id
 
     socket.join(channel)
 
